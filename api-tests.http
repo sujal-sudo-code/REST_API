@@ -1,0 +1,39 @@
+### Get all cards
+GET http://localhost:3000/cards
+
+###
+
+### Get specific card (King of Spades)
+GET http://localhost:3000/cards/2
+
+###
+
+### Create a new card
+POST http://localhost:3000/cards
+Content-Type: application/json
+
+{
+  "suit": "Clubs",
+  "value": "Jack"
+}
+
+###
+
+### Create another card
+POST http://localhost:3000/cards
+Content-Type: application/json
+
+{
+  "suit": "Hearts",
+  "value": "10"
+}
+
+###
+
+### Delete a card
+DELETE http://localhost:3000/cards/1
+
+###
+
+### Get all cards after operations
+GET http://localhost:3000/cards
